@@ -278,7 +278,15 @@ def main():
     2. choose model and set the trainable params 
     3. load init
     '''
-
+    if args.model == 'dsmil':
+        import dsmil as mil
+        i_classifier = mil.FCLayer(in_size=args.feats_size, out_size=args.num_classes).cuda()
+        b_classifier = mil.BClassifier(input_size=args.feats_size, output_class=args.num_classes, dropout_v=args.dropout_node, nonlinear=args.non_linearity,confounder_path=args.c_path).cuda()
+        milnet = mil.MILNet(i_classifier, b_classifier).cuda()
+    elif args.model == 'abmil':
+        import abmil as mil
+        milnet = mil.Attention(in_size=args.feats_size, out_size=args.num_classes,confounder_path=args.c_path, \
+            confounder_learn=args.c_learn, confounder_dim=args.c_dim, confounder_merge=args.c_merge).cuda()
     
     
     
