@@ -1,6 +1,6 @@
 # Interventional Bag Multi-Instance Learning On Whole-Slide Pathological Images
 Pytorch implementation for the multiple instance learning model described in the paper [Interventional Bag Multi-Instance Learning On Whole-Slide Pathological Images](https://arxiv.org/abs/2303.06873) (_CVPR 2023, selected as a highlight_).
-![](vis_ibmil.png)
+![](fig_ibmil.png)
 
 ## Installation
 a. Create a conda virtual environment and activate it.
