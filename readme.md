@@ -1,6 +1,6 @@
 # Interventional Bag Multi-Instance Learning On Whole-Slide Pathological Images
 Pytorch implementation for the multiple instance learning model described in the paper [Interventional Bag Multi-Instance Learning On Whole-Slide Pathological Images](https://arxiv.org/abs/2303.06873) (_CVPR 2023, selected as a highlight_).
-
+![](vis_ibmil.png)
 
 ## Installation
 a. Create a conda virtual environment and activate it.
@@ -86,6 +86,13 @@ An example with feature extractor of ImageNet-pretrained ResNet-18, MIL model of
 python train_tcga.py --num_classes 1 --dataset Camelyon16_Img_nor --agg no --feats_size 512   --model abmil --c_path datasets_deconf/Camelyon16_Img_nor/train_bag_cls_agnostic_feats_proto_8.npy
 ```
 
-## TODO
-- Code refactoring
-- Improve documentation and optimize project setup procedures
+## Citing IBMIL
+```
+@inproceedings{lin2023interventional,
+  title={Interventional bag multi-instance learning on whole-slide pathological images},
+  author={Lin, Tiancheng and Yu, Zhimiao and Hu, Hongyu and Xu, Yi and Chen, Chang-Wen},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={19830--19839},
+  year={2023}
+}
+```
