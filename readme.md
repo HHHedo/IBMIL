@@ -35,7 +35,7 @@ c. Install other third-party libraries.
 Please refer to [dsmil](https://github.com/binli123/dsmil-wsi/) for these steps.
 - Data pre-processing: Download the raw WSI data and Prepare the patches.
 - Computing features: Train the  feature extractor and using the pre-trained feature extractor for instance-level features. Note that the default feature extractor is ResNet, which can be replaced by other networks, e.g., ViT and CTransPath. Download the MoCo v3 pretrained ViT and SRCL pretrained CTransPath from https://github.com/Xiyue-Wang/TransPath.
-The pre-computed features (over 100G) will be released.
+- The pre-computed features are released at [Baidu cloud](https://pan.baidu.com/share/init?surl=_b6XWs7LiHQfIAKVUOXqNg&pwd=2i9p).
 
 ## Stage 2: Training aggregator and generating confounder
 The aggregator is firstly trained with bag-level labels end to end.
