@@ -202,7 +202,7 @@ def main():
     #     if args.feats_size == 512:
     #         load_path = 'abmil_c16_resnet18'
 
-    state_dict_weights = torch.load(args.load_path) 
+    state_dict_weights = torch.load(args.load_path, weights_only=True)
     msg = milnet.load_state_dict(state_dict_weights, strict=False)
     print("***********loading init from {}*******************".format(args.load_path))
     print(msg.missing_keys)
